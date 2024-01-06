@@ -24,7 +24,7 @@ function regicorp_register_custom_mega_menus()
 {
     register_nav_menus(
         array(
-            'amq_mega_menu' => __('Regicorp Mega Menu', 'divi'),
+            'amq_mega_menu' => __('Designed Mega Menu', 'divi'),
         )
     );
 }
