@@ -33,7 +33,7 @@ $logo_height = (!empty($logo_size) && is_numeric($logo_size[1]))
                     <nav role="navigation" id="regicorp-mega-nav" class="nav-menu-wrapper w-nav-menu">
                         <div class="nav-menu-content">
                             <?php if ($mega_menuitems) { ?>
-                                <div class="nav-menu josh-test">
+                                <div class="nav-menu amq-regi-test">
                                     <?php
                                     $menu_items_by_parent = array();
                                     foreach ($mega_menuitems as $menu_item) {
@@ -46,7 +46,7 @@ $logo_height = (!empty($logo_size) && is_numeric($logo_size[1]))
                                         <?php if (isset($menu_items_by_parent[$menu_item->ID])) { ?>
                                             <div class="nav-dropdown w-dropdown">
                                                 <div class="nav-dropdown-button w-dropdown-toggle" role="button">
-                                                    <div class="nav-link"><?php echo esc_html($menu_item->title); ?></div>
+                                                    <div class="nav-link"><a href="<?php echo $menu_item->url; ?>" class="regicorp-nav-mother-page"><?php echo esc_html($menu_item->title); ?></a></div>
                                                 </div>
                                                 <!-- dropdown sub menu items start -->
                                                 <?php
